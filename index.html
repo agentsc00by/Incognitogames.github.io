@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Incognito Games</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+</head>
+<body>
+<center>
+
+    <h1>Incognito Games🎮</h1>
+
+    <div class="topbar">
+
+        <a href="index.html">Home</a>
+        <a href="legal.html">Legal</a>
+
+    </div>
+
+    <br>
+
+    <div class="contents">
+      		 <a class="br" href="https://ubg98.github.io/BasketRandom/"><img src="images/basketrandom.png"></a>
+            <a href="https://railingames.github.io/files/1v1lol/"><img src="images/1v1lol.png"></a>
+            <a href="https://infinite-craft-clone.vercel.app/"><img src="images/download.png"></a>
+            <a href="https://dddavit.github.io/subway/"><img src="images/subwau.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+            <a href="game link"><img src="images/missing.png"></a>
+
+
+    </div>
+
+</center>
+
+<script>
+	
+
+        var urlObj = new window.URL(window.location.href);
+        var url = "https://ubg98.github.io/BasketRandom/";
+
+        if (url) {
+            var win;
+
+            document.querySelector('a').onclick = function() {
+                if (win) {
+                    win.focus();
+                } else {
+                    win = window.open();
+                    win.document.body.style.margin = '0';
+                    win.document.body.style.height = '100vh';
+                    var iframe = 
+                    win.document.createElement('iframe');
+                    iframe.style.border = 'none';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.margin = '0';
+                    iframe.src = url;
+                    win.document.body.appendChild(iframe);
+                    
+
+                    var interval = setInterval(function() {
+                        if (win.closed) {
+                            clearInterval(interval);
+                            win = undefined;
+
+                        }
+                    }, 500);
+
+
+                }
+            };
+        }
+    
+</script>
+
+</body>
+</html>
